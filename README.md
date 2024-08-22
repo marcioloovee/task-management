@@ -103,6 +103,15 @@ A documentação da API está disponível em:
 http://localhost:3000/docs
 ```
 
+## Sugestões de Melhoria
+
+Aqui estão algumas sugestões para melhorias no projeto:
+
+- **Autenticação e Autorização:** Implementar um sistema de autenticação e autorização robusto para garantir que apenas usuários autenticados possam acessar e modificar tarefas.
+- **Notificações e Alertas:** Adicionar funcionalidades para enviar notificações e alertas aos usuários sobre prazos de tarefas e atualizações.
+- **Escalabilidade:** Revisar e melhorar a arquitetura para suportar um número maior de usuários e tarefas, como por exemplo o uso de cache, filas, etc.
+
+
 ## Tecnologias Utilizadas
 
 - [NestJS](https://nestjs.com/)
