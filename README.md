@@ -13,6 +13,7 @@ Este é um Sistema de Gerenciamento de Tarefas construído com NestJS, TypeORM e
 
 Antes de começar, certifique-se de ter o seguinte instalado:
 
+- [Node.js](https://nodejs.org/)
 - [Docker](https://www.docker.com/get-started)
 - [Docker Compose](https://docs.docker.com/compose/install/)
 - [pnpm](https://pnpm.io/) Obs.: Pode usar npm
@@ -56,7 +57,7 @@ Antes de começar, certifique-se de ter o seguinte instalado:
     JWT_SECRET_TOKEN="secret_token"
     ```
 
-4. **Construa e inicie os contêineres Docker:**
+4. **Construa e inicie o contêiner Docker:**
 
     Use `docker-compose` para construir e executar a aplicação:
 
@@ -66,6 +67,12 @@ Antes de começar, certifique-se de ter o seguinte instalado:
 
 5. **Acesse a aplicação:**
 
+    Rode o comando para iniciar a aplicação:
+
+    ```bash
+    pnpm start
+    ```
+
     Uma vez que os contêineres estejam em execução, você pode acessar a aplicação em:
 
     ```
@@ -74,13 +81,7 @@ Antes de começar, certifique-se de ter o seguinte instalado:
 
 6. **Execute as migrações do banco de dados:**
 
-    Para aplicar as migrações, conecte-se ao contêiner em execução:
-
-    ```bash
-    docker exec -it nome-do-seu-serviço bash
-    ```
-
-    Então execute o seguinte comando dentro do contêiner:
+    Para aplicar as migrações, execute o seguinte comando:
 
     ```bash
     pnpm run migration:run
@@ -99,7 +100,7 @@ pnpm test
 A documentação da API está disponível em:
 
 ```
-http://localhost:3000/api
+http://localhost:3000/docs
 ```
 
 ## Tecnologias Utilizadas
